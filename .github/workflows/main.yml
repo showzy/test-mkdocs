@@ -25,7 +25,7 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           # デプロイ元リポジトリーとデプロイ先が異なる場合、
           # external_repository を指定します。
-          external_repository: showzy/test
+          external_repository: showzy/testsite
           # publish_branch を指定しない場合、
           # gh-pages ブランチにデプロイされます。
           publish_branch: master
