@@ -14,12 +14,29 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.8'
-      # Pipenv でパッケージ管理している場合を想定しています。
-      - run: python -m pip install pipenv
-      # Pipfile.lock を Git 管理に含めている場合を想定しています。
-      - run: python -m pipenv sync --dev
-      # まず、ビルドします。
-      - run: python -m pipenv run mkdocs build
+      - name: Upgrade pip
+        run: |
+          # install pip=>20.1 to use "pip cache dir"
+          python3 -m pip install --upgrade pip
+          
+      - name: Get pip cache dir
+        id: pip-cache
+        run: echo "::set-output name=dir::$(pip cache dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2          
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+     
+      - name: Install dependencies
+        run: python3 -m pip install -r ./requirements.txt
+
+# まず、ビルドします。
+      - run: mkdocs build
+
       - uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
