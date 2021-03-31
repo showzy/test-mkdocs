@@ -27,3 +27,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 
 ++ctrl++
+
+??? note
+    test test test
+    
+!!! tip
+    test test test
