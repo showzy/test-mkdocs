@@ -1,1 +1,22 @@
 site_name: My Docs
+theme:
+    name: 'material'
+    # サイトの言語設定
+    language: ja
+
+markdown_extensions:
+    # コードハイライトの設定
+    - codehilite:
+        noclasses: true
+        pygments_style: colorful
+        linenums: true
+    # PlantUMLの表示設定
+    - plantuml_markdown:
+        server: http://www.plantuml.com/plantuml
+    # アラート修飾の設定
+    - admonition
+    # スーパーフェンス機能の設定
+    - pymdownx.superfences
+    # コンテンツの折りたたみ
+    - pymdownx.details
+    - pymdownx.keys

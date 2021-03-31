@@ -1,0 +1,9 @@
+nginx:
+    image: nginx:latest
+    container_name: httpd
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
+      - ./site:/usr/share/nginx/html
+      
