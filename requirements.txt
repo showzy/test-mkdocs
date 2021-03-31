@@ -1,7 +1,8 @@
 ###### Requirements without Version Specifiers ######`
 MkDocs
 mkdocs-material
+plantuml-markdown
+pymdown-extensions
 #pelican
-#MkDocs
 #sphinx
 
