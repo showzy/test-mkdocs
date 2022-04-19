@@ -2,6 +2,7 @@
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
+[logo](https://material.io/resources/icons/?icon=description&style=baseline)
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
@@ -19,7 +20,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## 情報の整理
 
-やりたいこと→調査→実践→失敗→調査... 
+やりたいこと → 調査 → 実践 → 失敗 → 調査...
 繰り返してみる
 過程を文書化し共有化
 
@@ -30,6 +31,15 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ??? note
     test test test
-    
+
 !!! tip
     test test test
+
+:smile:
+:fa-coffee:
+
+
+定義語
+:    例
+
+

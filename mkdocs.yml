@@ -4,7 +4,20 @@ theme:
     # サイトの言語設定
     language: ja
 
+extra:
+    # Materialデザインのアイコン拡張
+    logo:
+        icon: 'developer_board'
+
 markdown_extensions:
+    - admonition # アラート修飾の設定
+    - pymdownx.details # コンテンツの折りたたみ
+    - pymdownx.keys
+    - def_list
+    - pymdownx.mark
+    - pymdownx.emoji
+    - fontawesome_markdown
+    - pymdownx.superfences # スーパーフェンス機能の設定
     # コードハイライトの設定
     - codehilite:
         noclasses: true
@@ -13,10 +26,3 @@ markdown_extensions:
     # PlantUMLの表示設定
     - plantuml_markdown:
         server: http://www.plantuml.com/plantuml
-    # アラート修飾の設定
-    - admonition
-    # スーパーフェンス機能の設定
-    - pymdownx.superfences
-    # コンテンツの折りたたみ
-    - pymdownx.details
-    - pymdownx.keys
