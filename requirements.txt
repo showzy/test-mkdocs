@@ -3,6 +3,7 @@ MkDocs
 mkdocs-material
 plantuml-markdown
 pymdown-extensions
+fontawesome_markdown
 #pelican
 #sphinx
 
