@@ -4,7 +4,6 @@
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-[logo](https://material.io/resources/icons/?icon=description&style=baseline)
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
