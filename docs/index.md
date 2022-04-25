@@ -1,3 +1,5 @@
+![pict1](./images/repository-open-graph-template.png)
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
